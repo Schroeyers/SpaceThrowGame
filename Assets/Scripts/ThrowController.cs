@@ -32,6 +32,7 @@ public class ThrowController : MonoBehaviour
     [Space]
     [Header("Bools")]
     public bool walking = true;
+    public bool jumping = true;
     public bool aiming = false;
     public bool hasWeapon = true;
     public bool pulling = false;
@@ -81,6 +82,7 @@ public class ThrowController : MonoBehaviour
         animator.SetBool("pulling", pulling);
         walking = input.Speed > 0;
         animator.SetBool("walking", walking);
+        animator.SetBool("jumping", jumping);
        
 
        
